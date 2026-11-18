@@ -4,30 +4,6 @@ const slides = Array.from(document.querySelectorAll('.hero-slide'));
 const slideDots = Array.from(document.querySelectorAll('.slide-dot'));
 const slideCurrent = document.querySelector('#slide-current');
 let activeSlide = 0;
-const uploadedImageFiles = new Map([
-    ['hero-01', 'hero-01'],
-    ['hero-02', 'hero-02'],
-    ['hero-03', 'hero-03'],
-    ['role-kebun', 'role-kebun'],
-    ['role-origin', 'role-origin'],
-    ['role-cangkir', 'role-cangkir'],
-    ['origin-gayo', 'origin-gayo'],
-    ['origin-flores', 'origin-flores'],
-    ['origin-toraja', 'origin-toraja'],
-    ['story-kebun', 'story-kebun'],
-    ['coffee-gayo', 'origin-gayo'],
-    ['coffee-flores', 'coffee-flores'],
-    ['coffee-toraja', 'coffee-toraja'],
-    ['coffee-ijen', 'coffee-ijen']
-]);
-
-document.querySelectorAll('img[data-image-slot]').forEach((image) => {
-    const imageFile = uploadedImageFiles.get(image.dataset.imageSlot);
-    if (imageFile) {
-        image.src = `assets/images/${imageFile}.jpeg`;
-    }
-});
-
 menuToggle.addEventListener('click', () => {
     const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
     menuToggle.setAttribute('aria-expanded', String(!isOpen));
