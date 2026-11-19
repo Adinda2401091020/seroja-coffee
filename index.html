@@ -8,11 +8,12 @@
     <title>Seroja Coffee — Cerita dari setiap biji</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&amp;family=Roboto:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&amp;family=Roboto:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Lewati ke konten</a>
     <header class="site-header">
         <a class="brand" href="#home" aria-label="Seroja Coffee, ke beranda">
             <img class="brand-logo" src="assets/seroja-logo.png" alt="Seroja Coffee Estate">
@@ -23,44 +24,41 @@
         </button>
         <nav class="site-nav" id="site-navigation" aria-label="Navigasi utama">
             <a href="#peran">Peran kami</a>
-            <a href="#origin">Coffee origin</a>
+            <a href="#origin">Asal kopi</a>
             <a href="#dampak">Dampak</a>
+            <a href="#riwayat">Cerita kami</a>
             <a href="#jelajah">Jelajahi kopi</a>
         </nav>
         <a class="header-link" href="#kontak">Hubungi kami <span aria-hidden="true">↗</span></a>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="hero" id="home" aria-label="Cerita Seroja Coffee">
             <article class="hero-slide is-active" aria-hidden="false">
-                <img src="assets/images/hero-01.jpeg" alt="Buah kopi merah dan hijau di cabang pohon kopi" fetchpriority="high">
+                <img src="assets/images/hero-01.jpeg" alt="Luwak di antara buah kopi di kebun" fetchpriority="high" decoding="async">
                 <div class="hero-shade"></div>
                 <div class="hero-copy">
-                    <p class="eyebrow"><span></span> Biji pilihan dari Indonesia</p>
-                    <h1>Setiap biji<br>punya <em>cerita.</em></h1>
-                    <p>Kami membawa rasa dari kebun-kebun Nusantara ke dalam cangkir yang menemani harimu.</p>
+                    <h1>Gayo Wild Luwak<br><em>Seroja Signature Heritage </em></h1>
+                    <p>Dari tanah Gayo yang subur, lahir keistimewaan kopi dengan karakter autentik dan cita rasa yang tak terlupakan.</p>
                     <a class="button button-light" href="#peran">Kenali Seroja <span aria-hidden="true">↘</span></a>
                 </div>
                 <span class="hero-caption">01 — TUMBUH BERSAMA ALAM</span>
             </article>
             <article class="hero-slide" aria-hidden="true">
-                <img src="assets/images/hero-02.jpeg" alt="Daun dan buah kopi yang tumbuh di kebun" loading="lazy">
+                <img src="assets/images/hero-02.jpeg" alt="Petani menjemur biji kopi di halaman pengeringan" loading="lazy" decoding="async">
                 <div class="hero-shade"></div>
                 <div class="hero-copy">
-                    <p class="eyebrow"><span></span> Asal yang kami jaga</p>
-                    <h2>Dari tanah<br><em>yang bermakna.</em></h2>
-                    <p>Kenali orang-orang dan tempat yang membuat karakter kopi Indonesia begitu beragam.</p>
+                    <h2>Cita rasa Gayo,<br><em>diracik untuk dinikmati.</em></h2>
+                    <p>Melalui proses pencucian yang terjaga, setiap biji kopi menghadirkan kejernihan rasa dan aroma yang istimewa.</p>
                     <a class="button button-light" href="#origin">Lihat coffee origin <span aria-hidden="true">↘</span></a>
                 </div>
-                <span class="hero-caption">02 — CERITA DARI ASALNYA</span>
             </article>
             <article class="hero-slide" aria-hidden="true">
-                <img src="assets/images/hero-03.jpeg" alt="Bunga kopi Seroja Coffee Estate" loading="lazy">
+                <img src="assets/images/hero-03.jpeg" alt="Petani memproses buah kopi di rumah pengeringan" loading="lazy" decoding="async">
                 <div class="hero-shade"></div>
                 <div class="hero-copy">
-                    <p class="eyebrow"><span></span> Diracik untuk dinikmati</p>
-                    <h2>Rasa lokal,<br><em>ruang untuk semua.</em></h2>
-                    <p>Temukan kopi dengan karakter yang pas, lalu nikmati tanpa perlu terburu-buru.</p>
+                    <h2>Eksplorasi rasa,<br><em>diracik generasi muda.</em></h2>
+                    <p>Diracik melalui ketekunan tangan generasi muda, menghadirkan cita rasa khas Gayo dengan sentuhan kreativitas masa kini.</p>
                     <a class="button button-light" href="#jelajah">Jelajahi pilihan <span aria-hidden="true">↘</span></a>
                 </div>
                 <span class="hero-caption">03 — SELALU ADA WAKTU UNTUK KOPI</span>
@@ -81,48 +79,36 @@
             <div class="section-heading">
                 <div>
                     <p class="eyebrow"><span></span> Bekerja dengan sepenuh hati</p>
-                    <h2>Our roles<br><em>di setiap perjalanan.</em></h2>
+                    <h2>Our Roles<br><em>di setiap perjalanan.</em></h2>
                 </div>
                 <p>Dari mengenal kebun hingga menyajikan kopi, kami ingin setiap langkah punya arti.</p>
             </div>
             <div class="role-grid">
                 <article class="role-card">
-                    <img src="assets/images/role-kebun.jpeg" alt="Tanaman muda yang tumbuh di lahan pertanian" loading="lazy">
+                    <img src="assets/images/role-kebun.jpeg" alt="Buah kopi matang di antara daun hijau" loading="lazy" decoding="async">
                     <div class="card-copy">
-                        <span class="card-kicker">01 / BALANCE</span>
-                        <h3>A brew of empathy</h3>
-                        <p>Menghargai pengetahuan petani dan merawat hubungan baik sejak dari kebun.</p>
-                        <button class="grid-detail-button" type="button" data-open-detail>Baca cerita <span aria-hidden="true">↗</span></button>
-                        <details class="read-more">
-                            <summary>Baca selengkapnya <span aria-hidden="true">＋</span></summary>
-                            <p>Contoh program Seroja: kunjungan kebun, berbagi catatan kualitas panen, dan pembelian biji berdasarkan kesepakatan yang transparan. Rincian ini merupakan materi simulasi.</p>
-                        </details>
+                        <span class="card-kicker">01 / OUR PHILOSOPHY</span>
+                        <h3>Merawat dengan empati</h3>
+                        <p>Kami adalah Seroja Coffee Estate, cerminan dari keseimbangan antara manusia dan alam di dataran tinggi Gayo. Kami tumbuh dari akar petani, namun berpikir seperti perancang sistem yang mencari harmoni antara rasa, waktu, dan keberlanjutan</p>
+                        <button class="grid-detail-button" type="button" data-open-detail data-detail="Contoh program: kunjungan kebun, berbagi catatan kualitas panen, dan pembelian biji berdasarkan kesepakatan yang transparan. Ini materi simulasi.">Baca cerita <span aria-hidden="true">↗</span></button>
                     </div>
                 </article>
                 <article class="role-card">
-                    <img src="assets/images/role-origin.jpeg" alt="Proses pemilihan dan penanganan biji kopi" loading="lazy">
+                    <img src="assets/images/role-origin.jpeg" alt="Petani merawat bibit kopi di persemaian" loading="lazy" decoding="async">
                     <div class="card-copy">
-                        <span class="card-kicker">02 / EQUALITY</span>
-                        <h3>Origin renaissance</h3>
-                        <p>Mengenalkan karakter setiap daerah melalui pilihan biji dan cerita asal-usulnya.</p>
-                        <button class="grid-detail-button" type="button" data-open-detail>Baca cerita <span aria-hidden="true">↗</span></button>
-                        <details class="read-more">
-                            <summary>Baca selengkapnya <span aria-hidden="true">＋</span></summary>
-                            <p>Kami membayangkan kolaborasi dengan komunitas lokal untuk mendokumentasikan varietas, metode pascapanen, dan kebiasaan yang menjaga mutu kopi dari musim ke musim.</p>
-                        </details>
+                        <span class="card-kicker">02 / OUR VALUES </span>
+                        <h3>Menghargai asal</h3>
+                        <p>Kami adalah Seroja Coffee Estate, cerminan dari keseimbangan antara manusia dan alam di dataran tinggi Gayo. Kami tumbuh dari akar petani, namun berpikir seperti perancang sistem yang mencari harmoni antara rasa, waktu, dan keberlanjutan.</p>
+                        <button class="grid-detail-button" type="button" data-open-detail data-detail="Cerita origin dapat mencakup varietas, metode pascapanen, dan kebiasaan lokal yang menjaga mutu kopi dari musim ke musim.">Baca cerita <span aria-hidden="true">↗</span></button>
                     </div>
                 </article>
                 <article class="role-card">
-                    <img src="assets/images/role-cangkir.jpeg" alt="Biji kopi pilihan yang siap diseduh" loading="lazy">
+                    <img src="assets/images/role-cangkir.jpeg" alt="Biji kopi hijau pilihan yang baru dipanen" loading="lazy" decoding="async">
                     <div class="card-copy">
-                        <span class="card-kicker">03 / SIMPLICITY</span>
-                        <h3>From beans to your embrace</h3>
-                        <p>Mengolah biji dengan cermat agar cerita dari kebun terasa di setiap tegukan.</p>
-                        <button class="grid-detail-button" type="button" data-open-detail>Baca cerita <span aria-hidden="true">↗</span></button>
-                        <details class="read-more">
-                            <summary>Baca selengkapnya <span aria-hidden="true">＋</span></summary>
-                            <p>Setiap racikan Seroja dirancang untuk menonjolkan rasa alami biji, disajikan dengan informasi asal dan saran seduh agar mudah kamu nikmati di rumah.</p>
-                        </details>
+                        <span class="card-kicker">03 / OUR PRINCIPLES</span>
+                        <h3>Dari biji ke cangkir</h3>
+                        <p>Kami adalah Seroja Coffee Estate, cerminan dari keseimbangan antara manusia dan alam di dataran tinggi Gayo. Kami tumbuh dari akar petani, namun berpikir seperti perancang sistem yang mencari harmoni antara rasa, waktu, dan keberlanjutan.</p>
+                        <button class="grid-detail-button" type="button" data-open-detail data-detail="Setiap racikan dapat disajikan dengan informasi asal dan saran seduh agar mudah dinikmati di rumah.">Baca cerita <span aria-hidden="true">↗</span></button>
                     </div>
                 </article>
             </div>
@@ -131,37 +117,55 @@
         <section class="origins section" id="origin">
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow"><span></span> Rasa dari banyak pulau</p>
-                    <h2>Coffee origin<br><em>Indonesia.</em></h2>
+                    <p class="eyebrow"><span></span> Dari kebun hingga proses</p>
+                    <h2>Process &amp; produk<br><em>kopi Seroja.</em></h2>
                 </div>
-                <p>Setiap wilayah menghadirkan cara tumbuh, proses, dan rasa yang berbeda.</p>
+                <p>Mengenal pilihan produk dan proses kopi dari Gayo, dirawat dengan alam dan dikerjakan dengan teliti.</p>
             </div>
-            <div class="origin-grid">
-                <article class="origin-card">
-                    <img src="assets/images/origin-gayo.jpeg" alt="Biji kopi hijau pilihan dari Gayo" loading="lazy">
-                    <div class="card-copy">
-                        <span class="card-kicker">ACEH / SUMATRA</span>
-                        <h3>Gayo Highlands</h3>
-                        <p>Kopi dataran tinggi dengan kesan rempah dan rasa yang kaya.</p>
-                        <button class="grid-detail-button" type="button" data-open-detail>Baca cerita <span aria-hidden="true">↗</span></button>
+            <div class="process-grid">
+                <article class="process-card">
+                    <img src="assets/images/origin-gayo.jpeg" alt="Biji kopi Gayo pilihan" loading="lazy" decoding="async">
+                    <div class="process-card-copy">
+                        <span class="card-kicker">01 / NATURE</span>
+                        <h3>Heritage Luwak Liar</h3>
+                        <p>Luwak liar Gayo dengan proses natural, pilihan kopi yang membawa cerita alam dan asalnya.</p>
+                        <span class="process-tag">Natural</span>
                     </div>
                 </article>
-                <article class="origin-card">
-                    <img src="assets/images/origin-flores.jpeg" alt="Biji kopi Flores yang siap diproses" loading="lazy">
-                    <div class="card-copy">
-                        <span class="card-kicker">FLORES / NUSA TENGGARA</span>
-                        <h3>Flores Bajawa</h3>
-                        <p>Karakter lembut dengan nuansa cokelat dan manis yang nyaman.</p>
-                        <button class="grid-detail-button" type="button" data-open-detail>Baca cerita <span aria-hidden="true">↗</span></button>
+                <article class="process-card">
+                    <img src="assets/images/origin-flores.jpeg" alt="Biji kopi yang sedang dipilih untuk proses pascapanen" loading="lazy" decoding="async">
+                    <div class="process-card-copy">
+                        <span class="card-kicker">02 / SEMIWASH</span>
+                        <h3>Giling Basah</h3>
+                        <p>Metode semiwash atau giling basah, salah satu proses pascapanen kopi Gayo.</p>
+                        <span class="process-tag">wash</span>
                     </div>
                 </article>
-                <article class="origin-card">
-                    <img src="assets/images/origin-toraja.jpeg" alt="Biji kopi Toraja hasil panen pilihan" loading="lazy">
-                    <div class="card-copy">
-                        <span class="card-kicker">TORAJA / SULAWESI</span>
-                        <h3>Toraja Highlands</h3>
-                        <p>Rasa seimbang, berlapis, dengan akhir seduhan yang panjang.</p>
-                        <button class="grid-detail-button" type="button" data-open-detail>Baca cerita <span aria-hidden="true">↗</span></button>
+                <article class="process-card">
+                    <img src="assets/images/coffee-flores.jpeg" alt="Biji kopi hijau hasil proses pascapanen" loading="lazy" decoding="async">
+                    <div class="process-card-copy">
+                        <span class="card-kicker">03 / FULLWASH</span>
+                        <h3>Basah</h3>
+                        <p>Fullwash, proses pengolahan kopi dengan pencucian sebelum biji dikeringkan.</p>
+                        <span class="process-tag">wash</span>
+                    </div>
+                </article>
+                <article class="process-card">
+                    <img src="assets/images/role-cangkir.jpeg" alt="Buah kopi matang dan hijau di pohon" loading="lazy" decoding="async">
+                    <div class="process-card-copy">
+                        <span class="card-kicker">04 / NATURAL</span>
+                        <h3>Natural</h3>
+                        <p>Buah kopi dikeringkan utuh; dikenal juga sebagai dry process.</p>
+                        <span class="process-tag">Dry</span>
+                    </div>
+                </article>
+                <article class="process-card">
+                    <img src="assets/images/coffee-ijen.jpeg" alt="Biji kopi pilihan dalam wadah sebelum diseduh" loading="lazy" decoding="async">
+                    <div class="process-card-copy">
+                        <span class="card-kicker">05 / HONEY</span>
+                        <h3>Honey</h3>
+                        <p>Proses pengeringan dengan sebagian lapisan lendir buah kopi tetap melekat pada biji.</p>
+                        <span class="process-tag">Dry</span>
                     </div>
                 </article>
             </div>
@@ -169,34 +173,17 @@
 
         <section class="impact-map-page" id="dampak">
             <div class="map-page-heading">
-                <p class="eyebrow"><span></span> Perjalanan kopi Nusantara</p>
-                <h2>Connected by coffee,<br><em>rooted in Indonesia.</em></h2>
-                <p>Peta sebaran origin dan area mitra Seroja di berbagai pulau.</p>
+                <p class="eyebrow"><span></span> Asal kopi Seroja</p>
+                <h2>Bener Meriah,<br><em>Aceh.</em></h2>
+                <p>Menelusuri wilayah origin kopi Seroja di dataran tinggi Aceh.</p>
             </div>
             <div class="map-panel">
-                <div class="map-heading"><span>PETA ASAL KOPI</span><span>INDONESIA</span></div>
-                <svg class="indonesia-map" viewBox="0 0 900 390" role="img" aria-labelledby="map-title map-desc">
-                    <title id="map-title">Peta ilustratif distribusi kopi Seroja di Indonesia</title>
-                    <desc id="map-desc">Ilustrasi kepulauan Sumatra, Jawa, Kalimantan, Sulawesi, Bali, Nusa Tenggara, Maluku dan Papua. Titik menandai wilayah contoh.</desc>
-                    <g class="islands">
-                        <path d="M92 79 C106 61 119 72 118 91 L139 119 133 145 148 169 135 194 147 220 132 241 126 271 109 286 100 265 108 241 92 218 101 194 84 171 94 147 81 126 91 103Z"/>
-                        <path d="M171 287 C205 280 245 281 274 291 L298 303 278 311 243 307 214 312 183 305 160 299Z"/>
-                        <path d="M191 116 C207 93 237 87 259 99 L278 121 269 149 282 175 269 201 275 229 255 246 235 231 216 242 200 219 187 196 193 174 180 150Z"/>
-                        <path d="M287 299 C304 295 318 298 328 302 L341 304 333 311 316 311 303 307Z"/>
-                        <path d="M350 307 C371 300 396 302 420 309 L446 314 438 322 408 320 382 315 355 317Z"/>
-                        <path d="M282 185 C315 168 350 165 377 179 L395 202 381 222 360 236 343 258 317 259 300 243 281 228 269 206Z"/>
-                        <path d="M426 169 C441 156 449 143 465 146 L478 163 472 183 490 196 483 212 465 211 451 230 438 218 428 199 411 188Z"/>
-                        <path d="M456 151 C475 132 496 136 507 153 L501 172 487 181 474 170Z"/>
-                        <path d="M512 246 C531 236 555 240 569 252 L567 267 545 272 522 267Z"/>
-                        <path d="M584 262 C605 253 630 255 645 268 L639 280 615 282 592 276Z"/>
-                        <path d="M657 280 C674 268 697 271 711 285 L704 296 682 297 663 291Z"/>
-                        <path d="M752 169 C773 153 804 149 829 156 L845 172 835 188 811 191 795 208 775 202 764 216 745 206 736 188Z"/>
-                    </g>
-                    <g class="map-pins" aria-hidden="true">
-                        <circle cx="106" cy="170" r="7"/><circle cx="229" cy="155" r="7"/><circle cx="348" cy="207" r="7"/><circle cx="466" cy="180" r="7"/><circle cx="555" cy="256" r="7"/><circle cx="789" cy="178" r="7"/>
-                    </g>
-                </svg>
-                <div class="map-legend"><span><i></i> Area contoh origin dan mitra</span><span>Ilustrasi, bukan peta navigasi</span></div>
+                <div class="map-heading"><span>PETA WILAYAH ORIGIN</span><span>BENER MERIAH, ACEH</span></div>
+                <img class="origin-map" src="assets/images/Map Aceh.svg" alt="Peta vektor wilayah Aceh dengan penanda origin kopi Seroja di Bener Meriah">
+                <div class="map-location">
+                    <span class="map-location-marker" aria-hidden="true"></span>
+                    <p><strong>Origin kopi Seroja</strong><span>Bener Meriah, dataran tinggi Gayo</span></p>
+                </div>
             </div>
             <a class="map-scroll-link" href="#our-impact">Lihat data dampak <span aria-hidden="true">↓</span></a>
         </section>
@@ -210,14 +197,14 @@
                 <div>
                     <p>Angka dan rincian di bawah adalah data contoh untuk rancangan ini, bukan klaim dampak operasional.</p>
                     <div class="impact-stats">
-                        <div><strong>06</strong><span>area origin</span></div>
-                        <div><strong>120+</strong><span>petani mitra*</span></div>
+                        <div><strong>05</strong><span>wilayah contoh</span></div>
+                        <div><strong>125</strong><span>petani mitra*</span></div>
                     </div>
                     <span class="data-note">*Contoh simulasi, bukan data aktual Seroja.</span>
                 </div>
             </div>
             <div class="impact-table-wrap">
-                <div class="table-title"><h3>Our impact</h3><span>DATA SIMULASI</span></div>
+                <div class="table-title"><h3>Contoh data dampak</h3><span>SIMULASI</span></div>
                 <table>
                     <thead>
                         <tr><th>Wilayah</th><th>Origin</th><th>Petani mitra</th><th>Fokus kolaborasi</th></tr>
@@ -231,6 +218,39 @@
                     </tbody>
                 </table>
                 <p class="table-note">Seluruh jumlah dan fokus kolaborasi di tabel ini merupakan data dummy.</p>
+            </div>
+        </section>
+
+        <section class="story-history section" id="riwayat" aria-labelledby="story-history-title">
+            <div class="story-history-heading">
+                <p class="eyebrow"><span></span> Cerita dan riwayat</p>
+                <h2 id="story-history-title">Tumbuh bersama alam,<br><em>melangkah dengan tujuan.</em></h2>
+            </div>
+            <div class="story-history-grid">
+                <article class="story-history-card">
+                    <img src="assets/images/story-kebun.jpeg" alt="Buah kopi tumbuh di antara dedaunan kebun" loading="lazy" decoding="async">
+                    <div class="story-history-copy">
+                        <span class="card-kicker">01 / OUR STORY</span>
+                        <h3>Our Story</h3>
+                        <p>Kami berteman dengan alam—menyambut kebaikannya, belajar dari tantangannya, dan terus berusaha berjalan selaras dengannya.</p>
+                    </div>
+                </article>
+                <article class="story-history-card">
+                    <img src="assets/images/role-kebun.jpeg" alt="Kebun kopi yang dirawat dengan telaten" loading="lazy" decoding="async">
+                    <div class="story-history-copy">
+                        <span class="card-kicker">02 / PERJALANAN</span>
+                        <h3>How it started</h3>
+                        <p>Cerita perjalanan kami sebelum hari ini—langkah demi langkah yang membentuk Seroja hingga sampai di titik sekarang.</p>
+                    </div>
+                </article>
+                <article class="story-history-card">
+                    <img src="assets/images/role-origin.jpeg" alt="Petani merawat bibit kopi di persemaian" loading="lazy" decoding="async">
+                    <div class="story-history-copy">
+                        <span class="card-kicker">03 / KOMITMEN</span>
+                        <h3>Our Commitment</h3>
+                        <p>Kami memilih bekerja dengan mitra yang berbagi nilai dan tujuan—menciptakan rantai kopi yang tidak hanya efisien, tetapi juga membawa kebaikan bersama.</p>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -260,15 +280,15 @@
                     <div class="explore-copy"><span>ACEH · 1.200–1.700 MDPL</span><h3>Gayo Highlands</h3><p><b>Varietas</b> — Arabika<br><b>Karakter</b> — Rempah, cokelat, body penuh.</p><button class="grid-detail-button" type="button" data-open-detail>Baca cerita <span aria-hidden="true">↗</span></button></div>
                 </article>
                 <article class="explore-card">
-                    <img src="assets/images/coffee-flores.jpeg" alt="Lanskap hijau perbukitan" loading="lazy">
+                    <img src="assets/images/coffee-flores.jpeg" alt="Perbukitan di wilayah perkebunan kopi Flores" loading="lazy">
                     <div class="explore-copy"><span>FLORES · DATARAN TINGGI BAJAWA</span><h3>Flores Bajawa</h3><p><b>Varietas</b> — Arabika<br><b>Karakter</b> — Manis, lembut, sentuhan kakao.</p><button class="grid-detail-button" type="button" data-open-detail>Baca cerita <span aria-hidden="true">↗</span></button></div>
                 </article>
                 <article class="explore-card">
-                    <img src="assets/images/coffee-toraja.jpeg" alt="Kabut di lembah pegunungan" loading="lazy">
+                    <img src="assets/images/coffee-toraja.jpeg" alt="Lembah berkabut di wilayah perkebunan kopi Toraja" loading="lazy">
                     <div class="explore-copy"><span>SULAWESI · TANA TORAJA</span><h3>Toraja Highlands</h3><p><b>Varietas</b> — Arabika<br><b>Karakter</b> — Seimbang, floral, akhir rasa panjang.</p><button class="grid-detail-button" type="button" data-open-detail>Baca cerita <span aria-hidden="true">↗</span></button></div>
                 </article>
                 <article class="explore-card">
-                    <img src="assets/images/coffee-ijen.jpeg" alt="Hutan tropis Indonesia dari kejauhan" loading="lazy">
+                    <img src="assets/images/coffee-ijen.jpeg" alt="Lanskap pegunungan di wilayah kopi Ijen" loading="lazy">
                     <div class="explore-copy"><span>JAWA TIMUR · PEGUNUNGAN IJEN</span><h3>Ijen Raung</h3><p><b>Varietas</b> — Arabika<br><b>Karakter</b> — Citrus, karamel, aftertaste bersih.</p><button class="grid-detail-button" type="button" data-open-detail>Baca cerita <span aria-hidden="true">↗</span></button></div>
                 </article>
             </div>
@@ -281,25 +301,25 @@
                 <a class="brand footer-brand" href="#home" aria-label="Seroja Coffee, kembali ke atas">
                     <img class="brand-logo" src="assets/seroja-logo.png" alt="Seroja Coffee Estate">
                 </a>
-                <p>First-hand coffee source.</p>
+                <p>Kopi pilihan dari kebun, diracik sepenuh hati.</p>
             </div>
             <div class="footer-links">
                 <h2>Jelajahi</h2>
                 <a href="#peran">Peran kami</a>
-                <a href="#origin">Coffee origin</a>
-                <a href="#our-impact">Our impact</a>
+                <a href="#origin">Asal kopi</a>
+                <a href="#dampak">Dampak</a>
+                <a href="#riwayat">Cerita kami</a>
                 <a href="#jelajah">Pilihan kopi</a>
             </div>
             <div class="footer-links">
                 <h2>Ikuti kami</h2>
-                <a href="https://www.instagram.com/serojacoffeeestate?utm_source=ig_web_button_share_sheet&knvt=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.instagram.com/serojacoffeeestate/">Instagram</a>
                 <a href="https://wa.me/6285121086993" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                 <a href="https://www.tiktok.com/@serojacoffeeestate" target="_blank" rel="noopener noreferrer">TikTok</a>
-                <a href="https://adinda2401091020.github.io/seroja-coffee/" target="_blank" rel="noopener noreferrer">Website</a>
             </div>
             <div class="footer-contact">
                 <h2>Kontak</h2>
-                <span>Aceh, Indonesia <small>Desa makmur sentosa,kecamatan bandar kabupaten bener meriah provinsi aceh,indonesia</small></span>
+                <span>Aceh, Indonesia <small>Desa Makmur Sentosa, Kecamatan Bandar, Kabupaten Bener Meriah, Aceh, Indonesia</small></span>
                 <a href="mailto:serojacoffeeestate@gmail.com">serojacoffeeestate@gmail.com</a>
                 <span>Senin–Sabtu · 09.00–16.00 WIB</span>
             </div>
@@ -311,7 +331,7 @@
     </footer>
     <dialog class="detail-dialog" aria-labelledby="detail-title">
         <button class="dialog-close" type="button" aria-label="Tutup detail">×</button>
-        <img class="dialog-image" src="" alt="">
+        <img class="dialog-image" alt="">
         <div class="dialog-copy">
             <p class="eyebrow dialog-kicker"></p>
             <h2 id="detail-title"></h2>

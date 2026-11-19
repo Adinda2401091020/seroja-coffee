@@ -10,6 +10,21 @@ menuToggle.addEventListener('click', () => {
     navigation.classList.toggle('is-open', !isOpen);
 });
 
+document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+
+    if (detailDialog.open) {
+        detailDialog.close();
+        return;
+    }
+
+    if (menuToggle.getAttribute('aria-expanded') === 'true') {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navigation.classList.remove('is-open');
+        menuToggle.focus();
+    }
+});
+
 navigation.addEventListener('click', (event) => {
     if (event.target.closest('a')) {
         menuToggle.setAttribute('aria-expanded', 'false');
@@ -24,6 +39,7 @@ function showSlide(index) {
         const isActive = slideIndex === activeSlide;
         slide.classList.toggle('is-active', isActive);
         slide.setAttribute('aria-hidden', String(!isActive));
+        slide.inert = !isActive;
         slideDots[slideIndex].classList.toggle('is-active', isActive);
         slideDots[slideIndex].setAttribute('aria-current', String(isActive));
     });
@@ -60,7 +76,7 @@ document.querySelectorAll('[data-open-detail]').forEach((button) => {
         const title = copy.querySelector('h3');
         const kicker = copy.querySelector('.card-kicker, .explore-copy > span');
         const description = copy.querySelector(':scope > p');
-        const extra = copy.querySelector('.read-more > p');
+        const extra = button.dataset.detail;
 
         dialogImage.src = image.complete && image.naturalWidth > 0
             ? image.currentSrc
@@ -69,13 +85,18 @@ document.querySelectorAll('[data-open-detail]').forEach((button) => {
         dialogTitle.textContent = title.textContent;
         dialogKicker.textContent = kicker.textContent;
         dialogDescription.textContent = description.textContent;
-        dialogExtra.textContent = extra ? extra.textContent : '';
+        dialogExtra.textContent = extra || '';
         dialogExtra.hidden = !extra;
         detailDialog.showModal();
     });
 });
 
 detailDialog.querySelector('.dialog-close').addEventListener('click', () => {
+    detailDialog.close();
+});
+
+detailDialog.addEventListener('cancel', (event) => {
+    event.preventDefault();
     detailDialog.close();
 });
 
@@ -90,7 +111,8 @@ document.querySelector('.hero').addEventListener('keydown', (event) => {
 
 const revealElements = document.querySelectorAll(
     '.section-heading, .role-card, .origin-card, .map-page-heading, .map-panel, ' +
-    '.impact-intro > div, .impact-table-wrap, .field-story-copy, .explore-card, .footer-main > *'
+    '.impact-intro > div, .impact-table-wrap, .story-history-heading, .story-history-card, ' +
+    '.field-story-copy, .explore-card, .footer-main > *'
 );
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
