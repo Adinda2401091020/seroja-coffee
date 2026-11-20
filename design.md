@@ -8,7 +8,7 @@ Seroja Coffee website. Use it as the reference when adding or updating pages.
 - **Personality:** editorial, warm, grounded in Indonesian coffee origins, and
   contemporary rather than overly decorative.
 - **Visual balance:** generous whitespace, large photography, restrained
-  typography, and small coral details.
+  typography, and bright-blue details against a light background.
 - **Grid alignment:** cards in the same row should start on the same baseline
   and use equal image heights. Do not stagger cards vertically unless a section
   is intentionally redesigned as an editorial collage.
@@ -21,13 +21,16 @@ Tokens are defined at the top of `styles.css`.
 
 | Token | Value | Use |
 |---|---|---|
-| `--paper` | `#f4f6f0` | Main page background |
-| `--paper-deep` | `#e8eee8` | Alternate section background |
-| `--ink` | `#183a3b` | Main text and headings |
-| `--muted` | `#53645f` | Supporting text |
-| `--green` | `#24605b` | Primary actions and brand details |
-| `--accent` | `#a74e35` | Emphasis, labels, and small highlights |
-| `--line` | `#d4dfd9` | Dividers and subtle borders |
+| `--paper` | `#f7f9fc` | Main page background |
+| `--paper-deep` | `#eaf1fa` | Alternate section background |
+| `--ink` | `#16314f` | Main text and headings |
+| `--muted` | `#52677f` | Supporting text |
+| `--primary` | `#003a6c` | Primary actions and brand details |
+| `--blue-mid` | `#164ecd` | Secondary blue and primary-action hover state |
+| `--blue-bright` | `#0085ff` | Small decorative highlights |
+| `--accent` | `#164ecd` | Emphasis and text labels with readable contrast |
+| `--blue-pale` | `#d6e4ff` | Soft blue highlight surfaces |
+| `--line` | `#d3e1f1` | Dividers and subtle borders |
 | `--display` | Bricolage Grotesque, Arial | Display headings |
 | `--sans` | Roboto, Arial | Body text, labels, and controls |
 
@@ -43,19 +46,22 @@ The page is a single scrollable landing page. Keep these sections in order:
 1. **Hero (`#home`)** — full-viewport image carousel, short story, CTA, previous
    and next controls, and slide indicators.
 2. **Our Roles (`#peran`)** — three equal cards for kebun, origin, and cangkir.
-3. **Coffee process and products (`#origin`)** — product and process cards for
-   Heritage Luwak Liar, Giling Basah, Basah, and experimental methods.
-4. **Origin map (`#dampak`)** — its own full-viewport section. The SVG is
+3. **Coffee Origin (`#origin`)** — seven selected farm locations in Bener
+   Meriah: Pondok Gajah, Pondok Sayur, Hakim, Gele, Bintang, Atu Lintang, and
+   Bur Lintang. Mark temporary farm photos so they can be replaced.
+4. **Coffee Process (`#process`)** — cards for Heritage Luwak Liar, Giling
+   Basah, Basah, Natural, and Honey processes.
+5. **Origin map (`#dampak`)** — its own full-viewport section. The SVG is
    traced from the supplied Aceh map artwork and is illustrative, not a
    navigation map or precise geographic dataset.
-5. **Our Impact (`#our-impact`)** — impact statistics and table. Current values
+6. **Our Impact (`#our-impact`)** — impact statistics and table. Current values
    are dummy examples and must not be presented as verified business data.
-6. **Story and history (`#riwayat`)** — three editorial cards for Our Story,
+7. **Story and history (`#riwayat`)** — three editorial cards for Our Story,
    How it started, and Our Commitment.
-7. **Field story (`#cerita`)** — full-width photo and short editorial story.
-8. **Explore origins (`#jelajah`)** — four cards with location, variety, and
+8. **Field story (`#cerita`)** — full-width photo and short editorial story.
+9. **Explore origins (`#jelajah`)** — four cards with location, variety, and
    tasting notes.
-9. **Footer (`#kontak`)** — brand summary, navigation, and contact details.
+10. **Footer (`#kontak`)** — brand summary, navigation, and contact details.
    Current location and email are examples.
 
 Preserve the section IDs when possible because navigation links and CTAs use
@@ -86,10 +92,12 @@ them.
   supplied logo artwork with its black background converted to transparency.
   Replace that file with another transparent logo PNG to update both placements
   together. The original SVG artwork is retained at `assets/seroja-logo.svg`.
-- Local photo slots live in `assets/images/`. The matching filenames are
-  documented in [`assets/images/README.txt`](./assets/images/README.txt).
+- Local photo slots live in `assets/images/`. The current available filenames
+  and temporary photo assignments are documented in
+  [`assets/images/README.txt`](./assets/images/README.txt).
 - Use local image files from `assets/images/` and keep their paths in
-  `index.html` aligned with the actual filenames.
+  `index.html` aligned with the actual filenames. Replace temporary assignments
+  with final photos as they become available.
 - Use descriptive `alt` text for meaningful photos. Use empty alt text only
   when the image is purely decorative.
 - Prefer landscape crops for card imagery, and choose a focal point that remains
